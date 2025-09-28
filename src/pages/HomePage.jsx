@@ -4,204 +4,203 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hp_hero">
+      <section className="hero-section">
         <div className="hp_container">
-          <h1 className="hp_hero__title">
-            Equilibre sua vida profissional e pessoal com apoio psicológico online
-          </h1>
-          
-          <p className="hp_hero__subtitle">
-            Atendimento acolhedor, prático e confidencial para quem vive o ritmo da liderança.
-          </p>
-          
-          <div className="hp_cluster hp_center">
-            <a href="#" className="hp_btn hp_btn--primary hp_btn--lg">
-              Agendar primeira conversa
-            </a>
-            
-            <Link to="#" className="hp_btn hp_btn--ghost">
-              Saiba mais
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Seção Serviços */}
-      <section className="hp_section hp_section--alt">
-        <div className="hp_container">
-          <div className="hp_center hp_mb-6">
-            <span className="hp_eyebrow">Como posso ajudar</span>
-            <h2 className="hp_heading">
-              Áreas de atuação
-            </h2>
-            <p className="hp_lead hp_muted">
-              Atendimento especializado para os principais desafios de quem ocupa posições de liderança.
-            </p>
-          </div>
-          
-          <div className="hp_grid hp_grid-3">
-            {/* Card 1 */}
-            <div className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_feature">
-                  <div className="hp_feature__icon">
-                    ⚡
-                  </div>
-                  
-                  <h3 className="hp_feature__title">
-                    Estresse e ansiedade no trabalho
-                  </h3>
-                  
-                  <p className="hp_feature__desc">
-                    Recupere clareza para decidir melhor e reduza o impacto do estresse na sua performance profissional.
-                  </p>
-                </div>
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1>Cuide da sua saúde emocional em um espaço seguro e acolhedor</h1>
+              <p className="hero-description">Atendimento psicológico online para lidar com ansiedade, relacionamentos, autoestima e desafios da vida.</p>
+              <div className="hero-buttons">
+                <a href="https://wa.me/5511997145238" className="btn-primary">
+                  Agende sua sessão
+                </a>
               </div>
             </div>
-
-            {/* Card 2 */}
-            <div className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_feature">
-                  <div className="hp_feature__icon">
-                    ⚖️
-                  </div>
-                  
-                  <h3 className="hp_feature__title">
-                    Equilíbrio vida-trabalho
-                  </h3>
-                  
-                  <p className="hp_feature__desc">
-                    Crie limites saudáveis e rotinas sustentáveis que permitam sucesso profissional sem sacrificar sua vida pessoal.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_feature">
-                  <div className="hp_feature__icon">
-                    👨‍👩‍👧‍👦
-                  </div>
-                  
-                  <h3 className="hp_feature__title">
-                    Desafios familiares
-                  </h3>
-                  
-                  <p className="hp_feature__desc">
-                    Melhore a comunicação, fortaleça vínculos e torne a convivência familiar mais leve e harmoniosa.
-                  </p>
-                </div>
+            <div className="hero-image">
+              <div className="profile-circle">
+                <span>👩‍⚕️</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Seção Blog Preview */}
-      <section className="hp_section">
+      {/* Sobre Mim */}
+      <section className="about-section">
         <div className="hp_container">
-          <div className="hp_center hp_mb-6">
-            <span className="hp_eyebrow">Blog</span>
-            <h2 className="hp_heading">
-              Conteúdos que ajudam no seu dia a dia
-            </h2>
-            <p className="hp_lead hp_muted">
-              Dicas práticas e insights para lidar melhor com os desafios da vida profissional.
-            </p>
+          <div className="section-header">
+            <span className="section-tag">Sobre Mim</span>
+            <h2>Hellen Brandão</h2>
+            <p>Psicóloga formada desde 2013</p>
           </div>
-          
-          <div className="hp_grid hp_grid-3">
-            {/* Post 1 */}
-            <article className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_postmeta hp_mb-3">
-                  <span className="hp_tag">15 de Agosto, 2025</span>
-                </div>
-                
-                <h3 className="hp_mb-3">
-                  <Link to="#" className="hp_link">
-                    Três sinais de que o estresse no trabalho está passando do limite
-                  </Link>
-                </h3>
-                
-                <p className="hp_text hp_muted hp_mb-4">
-                  Reconheça os sintomas antes que afetem sua saúde e produtividade.
-                </p>
-                
-                <Link to="#" className="hp_link">
-                  Ler mais →
-                </Link>
+
+          <div className="about-content">
+            <div className="about-text">
+              <p>Olá, sou Hellen Brandão, psicóloga formada desde 2013. Minha trajetória na psicologia é marcada pela escuta atenta e pela crença de que cada pessoa carrega uma história única.</p>
+
+              <p>Nos atendimentos, já acompanhei pessoas em diferentes momentos: ansiedade, baixa autoestima, dificuldades nos relacionamentos, sobrecarga no trabalho e fases de transição.</p>
+
+              <div className="highlight-box">
+                <p>💜 Acredito que a terapia é um processo de autoconhecimento, fortalecimento e transformação.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços */}
+      <section className="services-section">
+        <div className="hp_container">
+          <div className="section-header">
+            <span className="section-tag">Como posso ajudar</span>
+            <h2>Serviços de Atendimento</h2>
+            <p>Atendimento psicológico online especializado em diferentes fases da vida</p>
+          </div>
+
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">👩‍💼</div>
+              <h3>Adultos</h3>
+              <p>Apoio em momentos de ansiedade, depressão, autoestima, relacionamentos e sobrecarga profissional.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">🧑‍🎓</div>
+              <h3>Adolescentes</h3>
+              <p>Espaço para lidar com autoconhecimento, dificuldades escolares, relacionamentos e identidade.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">💡</div>
+              <h3>Orientações Pontuais</h3>
+              <p>Suporte para tomada de decisões, conflitos familiares ou profissionais, e situações de estresse.</p>
+            </div>
+          </div>
+
+          <div className="services-details">
+            <div className="section-header">
+              <h3>Como funciona o atendimento</h3>
+              <p>Informações importantes sobre o processo terapêutico</p>
+            </div>
+
+            <div className="details-grid">
+              <div className="detail-card">
+                <div className="detail-icon">🕐</div>
+                <h4>Duração</h4>
+                <p>Sessões de 50 minutos</p>
+              </div>
+
+              <div className="detail-card">
+                <div className="detail-icon">📅</div>
+                <h4>Frequência</h4>
+                <p>Geralmente semanal, ajustada conforme sua necessidade</p>
+              </div>
+
+              <div className="detail-card">
+                <div className="detail-icon">💻</div>
+                <h4>Modalidade</h4>
+                <p>Atendimento exclusivamente online via videochamada</p>
+              </div>
+
+              <div className="detail-card">
+                <div className="detail-icon">🔒</div>
+                <h4>Sigilo</h4>
+                <p>Confidencialidade absoluta garantida</p>
+              </div>
+
+              <div className="detail-card">
+                <div className="detail-icon">📋</div>
+                <h4>Primeira Consulta</h4>
+                <p>Acolhimento inicial e definição de objetivos</p>
+              </div>
+            </div>
+
+            <div className="process-flow">
+              <h4>Como começar seu processo terapêutico:</h4>
+              <div className="flow-steps">
+                <div className="flow-step">
+                  <div className="step-number">1</div>
+                  <div className="step-content">
+                    <h5>Primeiro Contato</h5>
+                    <p>Entre em contato via WhatsApp</p>
+                  </div>
+                </div>
+                <div className="flow-arrow">→</div>
+                <div className="flow-step">
+                  <div className="step-number">2</div>
+                  <div className="step-content">
+                    <h5>Agendamento</h5>
+                    <p>Escolhemos o melhor horário</p>
+                  </div>
+                </div>
+                <div className="flow-arrow">→</div>
+                <div className="flow-step">
+                  <div className="step-number">3</div>
+                  <div className="step-content">
+                    <h5>Primeira Sessão</h5>
+                    <p>Acolhimento e planejamento</p>
+                  </div>
+                </div>
+                <div className="flow-arrow">→</div>
+                <div className="flow-step">
+                  <div className="step-number">4</div>
+                  <div className="step-content">
+                    <h5>Acompanhamento</h5>
+                    <p>Processo terapêutico contínuo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section className="blog-section">
+        <div className="hp_container">
+          <div className="section-header">
+            <span className="section-tag">Blog</span>
+            <h2>Artigos sobre saúde mental</h2>
+            <p>Textos curtos para ajudar no seu dia a dia</p>
+          </div>
+
+          <div className="blog-grid">
+            <article className="blog-card featured">
+              <div className="blog-tag">Recente</div>
+              <h3>Ansiedade no dia a dia</h3>
+              <p>A ansiedade é uma emoção natural, mas quando passa a limitar nossas escolhas e trazer sofrimento, pode ser sinal de que precisamos de ajuda. A psicoterapia oferece ferramentas para compreender melhor os gatilhos da ansiedade.</p>
+              <Link to="/blog/ansiedade-no-dia-a-dia" className="read-more">Ler mais →</Link>
             </article>
 
-            {/* Post 2 */}
-            <article className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_postmeta hp_mb-3">
-                  <span className="hp_tag">10 de Agosto, 2025</span>
-                </div>
-                
-                <h3 className="hp_mb-3">
-                  <Link to="#" className="hp_link">
-                    Limites saudáveis: como dizer 'não' sem culpa
-                  </Link>
-                </h3>
-                
-                <p className="hp_text hp_muted hp_mb-4">
-                  Estratégias práticas para estabelecer limites profissionais sem comprometer relacionamentos.
-                </p>
-                
-                <Link to="#" className="hp_link">
-                  Ler mais →
-                </Link>
-                </div>
+            <article className="blog-card">
+              <div className="blog-tag">Saúde Mental</div>
+              <h3>Fortalecendo a autoestima</h3>
+              <p>A autoestima saudável é fundamental para o bem-estar emocional. Explore como desenvolver uma relação mais gentil consigo mesmo.</p>
+              <Link to="/blog" className="read-more">Ler mais →</Link>
             </article>
 
-            {/* Post 3 */}
-            <article className="hp_card">
-              <div className="hp_card__body">
-                <div className="hp_postmeta hp_mb-3">
-                  <span className="hp_tag">5 de Agosto, 2025</span>
-                </div>
-                
-                <h3 className="hp_mb-3">
-                  <Link to="#" className="hp_link">
-                    Ansiedade e produtividade: como quebrar o ciclo
-                  </Link>
-                </h3>
-                
-                <p className="hp_text hp_muted hp_mb-4">
-                  Entenda a relação entre ansiedade e performance no trabalho e como encontrar equilíbrio.
-                </p>
-                
-                <Link to="#" className="hp_link">
-                  Ler mais →
-                </Link>
-                </div>
+            <article className="blog-card">
+              <div className="blog-tag">Relacionamentos</div>
+              <h3>Comunicação saudável</h3>
+              <p>Dicas práticas para melhorar a comunicação e fortalecer vínculos afetivos importantes em sua vida.</p>
+              <Link to="/blog" className="read-more">Ler mais →</Link>
             </article>
           </div>
-          
-          <div className="hp_center hp_mt-6">
-            <Link to="#" className="hp_btn hp_btn--ghost">
-              Ver todos os artigos
-            </Link>
+
+          <div className="blog-cta">
+            <Link to="/blog" className="btn-outline">Ver todos os artigos</Link>
           </div>
         </div>
       </section>
 
       {/* CTA Final */}
-      <section className="hp_cta_bar">
+      <section className="cta-section">
         <div className="hp_container">
-          <div className="hp_center">
-            <h2 className="hp_mb-4">Pronto para dar o primeiro passo?</h2>
-            <p className="hp_mb-5">
-              Agende uma conversa inicial sem compromisso e vamos conversar sobre como posso ajudar você.
-            </p>
-            <a href="https://wa.me/5511999999999" className="hp_btn hp_btn--secondary hp_btn--lg">
-              Falar no WhatsApp
+          <div className="cta-content">
+            <h2>Dê o primeiro passo no seu processo de cuidado emocional</h2>
+            <p>Estou aqui para acompanhar você em um espaço seguro e acolhedor. Entre em contato e vamos conversar sobre como posso ajudar.</p>
+            <a href="https://wa.me/5511997145238" className="btn-cta">
+              Conversar no WhatsApp
             </a>
           </div>
         </div>
