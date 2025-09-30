@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Import original CSS design system */
-@import '../shared/styles/PrincipalArquivoDeClasses.css';
+@import './Shared/PrincipalArquivoDeClasses.css';
 
 @layer base {
   html {
