@@ -1,6 +1,11 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
+import { listPosts } from '@/lib/blog'
 
-export default function HomePage() {
+export const revalidate = 3600 // Revalidate every hour
+
+export default async function HomePage() {
+  const { data: latestPosts } = await listPosts({ pageSize: 3 })
+
   return (
     <>
       {/* Hero Section */}
@@ -165,30 +170,30 @@ export default function HomePage() {
           </div>
 
           <div className="blog-grid">
-            <article className="blog-card featured">
-              <div className="blog-tag">Recente</div>
-              <h3>Ansiedade no dia a dia</h3>
-              <p>A ansiedade é uma emoção natural, mas quando passa a limitar nossas escolhas e trazer sofrimento, pode ser sinal de que precisamos de ajuda. A psicoterapia oferece ferramentas para compreender melhor os gatilhos da ansiedade.</p>
-              <Link to="/blog/ansiedade-no-dia-a-dia" className="read-more">Ler mais →</Link>
-            </article>
-
-            <article className="blog-card">
-              <div className="blog-tag">Saúde Mental</div>
-              <h3>Fortalecendo a autoestima</h3>
-              <p>A autoestima saudável é fundamental para o bem-estar emocional. Explore como desenvolver uma relação mais gentil consigo mesmo.</p>
-              <Link to="/blog" className="read-more">Ler mais →</Link>
-            </article>
-
-            <article className="blog-card">
-              <div className="blog-tag">Relacionamentos</div>
-              <h3>Comunicação saudável</h3>
-              <p>Dicas práticas para melhorar a comunicação e fortalecer vínculos afetivos importantes em sua vida.</p>
-              <Link to="/blog" className="read-more">Ler mais →</Link>
-            </article>
+            {latestPosts.length > 0 ? (
+              latestPosts.map((post, index) => (
+                <article key={post.id} className={`blog-card ${index === 0 ? 'featured' : ''}`}>
+                  {index === 0 && <div className="blog-tag">Recente</div>}
+                  {post.post_tags && post.post_tags.length > 0 && index > 0 && (
+                    <div className="blog-tag">{post.post_tags[0].tags.name}</div>
+                  )}
+                  <h3>{post.title}</h3>
+                  <p>{post.summary || 'Clique para ler o artigo completo.'}</p>
+                  <Link href={`/blog/${post.slug}`} className="read-more">Ler mais →</Link>
+                </article>
+              ))
+            ) : (
+              <article className="blog-card featured">
+                <div className="blog-tag">Em breve</div>
+                <h3>Novos artigos chegando</h3>
+                <p>Em breve, novos conteúdos sobre saúde mental, relacionamentos e crescimento pessoal estarão disponíveis aqui.</p>
+                <Link href="/blog" className="read-more">Ver blog →</Link>
+              </article>
+            )}
           </div>
 
           <div className="blog-cta">
-            <Link to="/blog" className="btn-outline">Ver todos os artigos</Link>
+            <Link href="/blog" className="btn-outline">Ver todos os artigos</Link>
           </div>
         </div>
       </section>

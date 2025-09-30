@@ -3,7 +3,16 @@
     "allow": [
       "Read(//d/OneDrive/Sites/HellenPsicologa/**)",
       "Bash(curl:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(npm cache clean:*)",
+      "Bash(if exist node_modules rmdir /s /q node_modules)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

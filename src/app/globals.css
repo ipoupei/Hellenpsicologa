@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import original CSS design system */
+@import '../shared/styles/PrincipalArquivoDeClasses.css';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: var(--hp-text-base);
+    font-weight: var(--hp-font-normal);
+    line-height: var(--hp-leading-normal);
+    color: var(--hp-color-text);
+    background-color: var(--hp-color-bg);
+  }
+}
+
+@layer components {
+  /* Override WhatsApp float to use original design system */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--hp-color-primary) 0%, var(--hp-color-primary-600) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(156, 127, 201, 0.3);
+    transition: var(--hp-transition);
+    z-index: 1000;
+    text-decoration: none;
+    border: 3px solid white;
+  }
+
+  .whatsapp-float:hover {
+    background: linear-gradient(135deg, var(--hp-color-primary-600) 0%, var(--hp-color-primary) 100%);
+    transform: scale(1.1);
+    text-decoration: none;
+    box-shadow: 0 15px 35px rgba(156, 127, 201, 0.4);
+  }
+
+  .whatsapp-float span {
+    font-size: 1.5rem;
+    color: white;
+  }
+}

@@ -1,4 +1,5 @@
-/* src/pages/ContactPage.jsx */
+'use client'
+
 import { useState } from 'react'
 
 export default function ContactPage() {
@@ -10,19 +11,19 @@ export default function ContactPage() {
    message: ''
  })
 
- const handleChange = (e) => {
+ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
    setFormData({
      ...formData,
      [e.target.name]: e.target.value
    })
  }
 
- const handleSubmit = (e) => {
+ const handleSubmit = (e: React.FormEvent) => {
    e.preventDefault()
    // Por enquanto só um console.log, depois integraremos com backend
    console.log('Formulário enviado:', formData)
    alert('Mensagem enviada! Retornarei o contato em breve.')
-   
+
    // Limpar formulário
    setFormData({
      name: '',
@@ -54,7 +55,7 @@ export default function ContactPage() {
              <div className="hp_card__header">
                <h2 className="hp_subheading hp_mb-0">Envie uma mensagem</h2>
              </div>
-             
+
              <div className="hp_card__body">
                <form className="hp_form" onSubmit={handleSubmit}>
                  <div className="hp_form__row">
@@ -159,8 +160,8 @@ export default function ContactPage() {
                    <p className="hp_feature__desc hp_mb-4">
                      Forma mais rápida de entrar em contato e agendar sua primeira conversa.
                    </p>
-                   <a 
-                     href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma primeira conversa." 
+                   <a
+                     href="https://wa.me/5511997145238?text=Olá! Gostaria de agendar uma primeira conversa."
                      className="hp_btn hp_btn--secondary hp_btn--block"
                      target="_blank"
                      rel="noopener noreferrer"
@@ -180,8 +181,8 @@ export default function ContactPage() {
                    <p className="hp_feature__desc hp_mb-4">
                      Para dúvidas ou informações mais detalhadas.
                    </p>
-                   <a 
-                     href="mailto:contato@hellenpsicologa.com" 
+                   <a
+                     href="mailto:contato@hellenpsicologa.com"
                      className="hp_btn hp_btn--ghost hp_btn--block"
                    >
                      contato@hellenpsicologa.com
@@ -215,7 +216,7 @@ export default function ContactPage() {
        <div className="hp_section--alt hp_py-6 hp_mt-8" style={{borderRadius: 'var(--hp-radius-lg)'}}>
          <div className="hp_center">
            <h2 className="hp_subheading hp_mb-4">Algumas informações importantes</h2>
-           
+
            <div className="hp_grid hp_grid-3">
              <div className="hp_center">
                <div className="hp_feature__icon hp_mb-3">🔒</div>
@@ -224,7 +225,7 @@ export default function ContactPage() {
                  Todas as informações são tratadas com absoluto sigilo conforme código de ética.
                </p>
              </div>
-             
+
              <div className="hp_center">
                <div className="hp_feature__icon hp_mb-3">💻</div>
                <h4 className="hp_mb-2">Atendimento online</h4>
@@ -232,7 +233,7 @@ export default function ContactPage() {
                  Sessões por videochamada em plataforma segura e privada.
                </p>
              </div>
-             
+
              <div className="hp_center">
                <div className="hp_feature__icon hp_mb-3">⏱️</div>
                <h4 className="hp_mb-2">Resposta rápida</h4>
@@ -251,8 +252,8 @@ export default function ContactPage() {
            <p className="hp_mb-5">
              Que tal começarmos com uma conversa inicial para nos conhecermos e esclarecer suas dúvidas?
            </p>
-           <a 
-             href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma primeira conversa sem compromisso." 
+           <a
+             href="https://wa.me/5511997145238?text=Olá! Gostaria de agendar uma primeira conversa sem compromisso."
              className="hp_btn hp_btn--primary hp_btn--lg"
              target="_blank"
              rel="noopener noreferrer"

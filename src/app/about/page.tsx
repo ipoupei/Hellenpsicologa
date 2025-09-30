@@ -1,4 +1,3 @@
-/* src/pages/AboutPage.jsx */
 export default function AboutPage() {
   return (
     <div className="hp_section">

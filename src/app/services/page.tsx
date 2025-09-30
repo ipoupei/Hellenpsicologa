@@ -1,4 +1,3 @@
-/* src/pages/ServicesPage.jsx */
 export default function ServicesPage() {
  return (
    <div className="hp_section">
@@ -22,7 +21,7 @@ export default function ServicesPage() {
              Processo simples e acolhedor para você começar sua jornada de autoconhecimento
            </p>
          </div>
-         
+
          <div className="hp_grid hp_grid-3">
            <div className="hp_center">
              <div className="hp_feature__icon hp_mb-4">1️⃣</div>
@@ -31,7 +30,7 @@ export default function ServicesPage() {
                Entre em contato pelo WhatsApp ou formulário. Vamos agendar uma conversa inicial para nos conhecermos.
              </p>
            </div>
-           
+
            <div className="hp_center">
              <div className="hp_feature__icon hp_mb-4">2️⃣</div>
              <h3 className="hp_feature__title">Sessão inicial</h3>
@@ -39,7 +38,7 @@ export default function ServicesPage() {
                Conversamos sobre seus objetivos, desafios e expectativas. Definimos juntos o melhor caminho.
              </p>
            </div>
-           
+
            <div className="hp_center">
              <div className="hp_feature__icon hp_mb-4">3️⃣</div>
              <h3 className="hp_feature__title">Acompanhamento</h3>
@@ -58,7 +57,7 @@ export default function ServicesPage() {
              Especializada nos principais desafios de profissionais em posições de liderança
            </p>
          </div>
-         
+
          <div className="hp_stack">
            {/* Área 1 */}
            <div className="hp_card">
@@ -148,7 +147,7 @@ export default function ServicesPage() {
          <div className="hp_center hp_mb-6">
            <h2 className="hp_heading">Perguntas frequentes</h2>
          </div>
-         
+
          <div className="hp_stack">
            <div className="hp_card">
              <div className="hp_card__body">
@@ -158,7 +157,7 @@ export default function ServicesPage() {
                </p>
              </div>
            </div>
-           
+
            <div className="hp_card">
              <div className="hp_card__body">
                <h3 className="hp_mb-3">Qual a duração e frequência das sessões?</h3>
@@ -167,7 +166,7 @@ export default function ServicesPage() {
                </p>
              </div>
            </div>
-           
+
            <div className="hp_card">
              <div className="hp_card__body">
                <h3 className="hp_mb-3">O atendimento online é seguro e confidencial?</h3>
@@ -176,7 +175,7 @@ export default function ServicesPage() {
                </p>
              </div>
            </div>
-           
+
            <div className="hp_card">
              <div className="hp_card__body">
                <h3 className="hp_mb-3">Quanto tempo leva para ver resultados?</h3>
@@ -185,7 +184,7 @@ export default function ServicesPage() {
                </p>
              </div>
            </div>
-           
+
            <div className="hp_card">
              <div className="hp_card__body">
                <h3 className="hp_mb-3">Como faço para agendar uma sessão?</h3>
@@ -204,7 +203,7 @@ export default function ServicesPage() {
            <p className="hp_mb-5">
              Agende sua primeira conversa e vamos descobrir juntos como posso ajudar você a alcançar seus objetivos.
            </p>
-           <a href="https://wa.me/5511999999999" className="hp_btn hp_btn--primary hp_btn--lg">
+           <a href="https://wa.me/5511997145238" className="hp_btn hp_btn--primary hp_btn--lg">
              Agendar primeira conversa
            </a>
          </div>

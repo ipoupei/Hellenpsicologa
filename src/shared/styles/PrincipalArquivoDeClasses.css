@@ -467,6 +467,113 @@ code {
   background-color: var(--hp-color-bg);
 }
 
+.hp_card__image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hp_card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hp_card__title {
+  font-size: var(--hp-text-xl);
+  font-weight: var(--hp-font-semibold);
+  line-height: var(--hp-leading-tight);
+  color: var(--hp-color-text);
+}
+
+.hp_card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--hp-space-3);
+}
+
+/* Blog post individual styles */
+.hp_image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: var(--hp-radius-lg);
+}
+
+.hp_breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: var(--hp-text-sm);
+  color: var(--hp-color-text-muted);
+  margin-bottom: var(--hp-space-4);
+}
+
+.hp_meta {
+  display: flex;
+  align-items: center;
+  gap: var(--hp-space-4);
+  margin-bottom: var(--hp-space-6);
+}
+
+.hp_prose {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.hp_content {
+  line-height: var(--hp-leading-relaxed);
+  color: var(--hp-color-text);
+}
+
+.hp_content h1,
+.hp_content h2,
+.hp_content h3,
+.hp_content h4,
+.hp_content h5,
+.hp_content h6 {
+  margin-top: var(--hp-space-8);
+  margin-bottom: var(--hp-space-4);
+  color: var(--hp-color-text);
+}
+
+.hp_content h1 { font-size: var(--hp-text-3xl); }
+.hp_content h2 { font-size: var(--hp-text-2xl); }
+.hp_content h3 { font-size: var(--hp-text-xl); }
+
+.hp_content p {
+  margin-bottom: var(--hp-space-4);
+}
+
+.hp_content ul,
+.hp_content ol {
+  margin-bottom: var(--hp-space-4);
+  padding-left: var(--hp-space-5);
+}
+
+.hp_content li {
+  margin-bottom: var(--hp-space-2);
+}
+
+.hp_content a {
+  color: var(--hp-color-primary);
+  text-decoration: underline;
+}
+
+.hp_content a:hover {
+  color: var(--hp-color-primary-600);
+}
+
+.hp_content blockquote {
+  border-left: 4px solid var(--hp-color-primary);
+  padding-left: var(--hp-space-4);
+  margin: var(--hp-space-6) 0;
+  font-style: italic;
+  color: var(--hp-color-text-muted);
+}
+
 /* ===================================================================
    NAVIGATION COMPONENTS
    =================================================================== */
@@ -710,6 +817,11 @@ code {
   font-size: var(--hp-text-sm);
   font-weight: var(--hp-font-medium);
   border-radius: var(--hp-radius-lg);
+}
+
+.hp_badge--primary {
+  background-color: rgba(156, 127, 201, 0.1);
+  color: var(--hp-color-primary-600);
 }
 
 .hp_tag {
