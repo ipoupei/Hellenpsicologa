@@ -6,6 +6,10 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Hellen Psicóloga - Transforme seu casulo em borboleta',
   description: 'Psicologia clínica para ansiedade, autoestima e relacionamentos. Agende sua sessão e transforme seu casulo em borboleta.',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
