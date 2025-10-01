@@ -22,7 +22,7 @@ export async function GET() {
 
     ${posts
       .map(
-        (post) => `
+        (post: any) => `
     <item>
       <title><![CDATA[${post.title}]]></title>
       <description><![CDATA[${post.summary || ''}]]></description>
