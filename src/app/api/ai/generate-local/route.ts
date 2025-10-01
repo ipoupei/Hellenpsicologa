@@ -150,7 +150,7 @@ function generateSummary(content: string): string {
   }
 
   // Detecta o tema principal
-  let selectedTheme = null
+  let selectedTheme: string | null = null
   let maxMatches = 0
 
   for (const [theme, data] of Object.entries(contentAnalysis)) {
@@ -165,8 +165,8 @@ function generateSummary(content: string): string {
   }
 
   // Escolhe um resumo aleatório do tema detectado
-  if (selectedTheme && contentAnalysis[selectedTheme]) {
-    const summaries = contentAnalysis[selectedTheme].summaries
+  if (selectedTheme && contentAnalysis[selectedTheme as keyof typeof contentAnalysis]) {
+    const summaries = contentAnalysis[selectedTheme as keyof typeof contentAnalysis].summaries
     const randomSummary = summaries[Math.floor(Math.random() * summaries.length)]
 
     // Adiciona contexto baseado no tamanho do conteúdo

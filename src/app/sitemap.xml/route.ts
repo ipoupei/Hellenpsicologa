@@ -3,6 +3,9 @@ import { listPosts, listTags } from '@/lib/blog'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 3600
+
 export async function GET() {
   try {
     const [{ data: posts }, tags] = await Promise.all([

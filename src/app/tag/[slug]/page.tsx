@@ -5,6 +5,9 @@ import { listPosts, getTagBySlug, listTags } from '@/lib/blog'
 import PostCard from '@/components/blog/PostCard'
 import Pagination from '@/components/blog/Pagination'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 60
+
 export async function generateStaticParams() {
   try {
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {

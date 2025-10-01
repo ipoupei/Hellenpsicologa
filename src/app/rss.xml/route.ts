@@ -3,6 +3,9 @@ import { listPosts } from '@/lib/blog'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 3600
+
 export async function GET() {
   try {
     const { data: posts } = await listPosts({ pageSize: 50 }) // Last 50 posts

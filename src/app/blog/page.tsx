@@ -5,6 +5,7 @@ import SearchBar from '@/components/blog/SearchBar'
 import TagFilter from '@/components/blog/TagFilter'
 import Pagination from '@/components/blog/Pagination'
 
+export const dynamic = 'force-dynamic'
 export const revalidate = 3600 // Revalidate every hour
 
 interface BlogPageProps {

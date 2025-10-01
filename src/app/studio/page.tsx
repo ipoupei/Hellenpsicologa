@@ -5,8 +5,18 @@ import Link from 'next/link'
 import { supabaseBrowser } from '@/lib/supabase/browser'
 import AuthProtectedPage from '@/components/AuthProtectedPage'
 
+interface Post {
+  id: string
+  title: string
+  slug: string
+  status: string
+  published_at: string | null
+  created_at: string
+  updated_at: string
+}
+
 export default function StudioDashboard() {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState<Post[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

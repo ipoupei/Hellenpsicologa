@@ -7,6 +7,9 @@ import { generatePostJsonLd, generateBreadcrumbJsonLd } from '@/lib/seo'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 60
+
 export async function generateStaticParams() {
   try {
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
