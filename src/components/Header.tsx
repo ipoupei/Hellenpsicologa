@@ -27,10 +27,10 @@ export default function Header() {
 
           <ul className="hp_nav__links">
             <li><Link href="/" className="hp_nav__link">Home</Link></li>
-            <li><Link href="/about" className="hp_nav__link">Sobre Mim</Link></li>
-            <li><Link href="/services" className="hp_nav__link">Serviços</Link></li>
+            <li><Link href="/sobre" className="hp_nav__link">Sobre Mim</Link></li>
+            <li><Link href="/servicos" className="hp_nav__link">Serviços</Link></li>
             <li><Link href="/blog" className="hp_nav__link">Blog</Link></li>
-            <li><Link href="/contact" className="hp_nav__link">Agende sua Sessão</Link></li>
+            <li><Link href="/contato" className="hp_nav__link">Agende sua Sessão</Link></li>
           </ul>
 
           <div className="hp_nav__cta">
